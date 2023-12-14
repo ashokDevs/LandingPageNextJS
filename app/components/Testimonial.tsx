@@ -2,7 +2,7 @@ import Image from "next/image";
  
 function Testimonial() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <div className="h-fit flex items-center justify-center m-10">
       <Image
         src="/testimonial.png"
         width={500}

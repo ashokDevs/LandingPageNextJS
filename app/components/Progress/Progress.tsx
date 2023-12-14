@@ -1,7 +1,8 @@
 function Progress() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+    <div className="min-h-screen  flex flex-col lg:flex-row items-center justify-center">
+      <h1 className="text-5xl font-bold p-9">Future Timeline of My Product</h1>
+      <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical p-6">
         <li>
           <div className="timeline-middle">
             <svg
@@ -20,7 +21,6 @@ function Progress() {
           <div className="timeline-start md:text-end mb-10">
             <time className="font-mono italic">Dec 2023</time>
             <div className="text-lg font-black">Get early customers</div>
-            Description for acquiring early customers.
           </div>
           <hr />
         </li>
@@ -43,7 +43,6 @@ function Progress() {
           <div className="timeline-end mb-10">
             <time className="font-mono italic">Jan 20, 2024</time>
             <div className="text-lg font-black">Allow blog generation</div>
-            Description for allowing blog generation.
           </div>
           <hr />
         </li>
@@ -68,7 +67,6 @@ function Progress() {
             <div className="text-lg font-black">
               Make it keep updating itself every month
             </div>
-            Description for implementing automatic monthly updates.
           </div>
           <hr />
         </li>
@@ -92,7 +90,6 @@ function Progress() {
           <div className="timeline-end mb-10">
             <time className="font-mono italic">Feb 5, 2024</time>
             <div className="text-lg font-black">Test</div>
-            Description for conducting testing.
           </div>
           <hr />
         </li>
@@ -115,7 +112,6 @@ function Progress() {
           <div className="timeline-start md:text-end mb-10">
             <time className="font-mono italic">Feb 14, 2024</time>
             <div className="text-lg font-black">Launch</div>
-            Description for officially launching the website.
           </div>
         </li>
       </ul>
