@@ -7,10 +7,13 @@ import Testimonial from "../components/Testimonial";
 import ValuePropsComponent from "../components/Valueprops";
 import Mvp from "../components/Mvp/Mvp";
 
+import { Hero1 } from "../components/Hero1";
+
 export default function Home() {
   return (
     <main>
-      <Hero />
+      <Hero1/>
+      {/* <Hero /> */}
       <Testimonial />
       <Mvp/>
       {/* <ValuePropsComponent /> */}
