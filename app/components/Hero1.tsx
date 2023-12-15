@@ -7,9 +7,10 @@ export const Hero1 = () => {
               <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
                 Brand new
               </p>
+              
             </div>
-            <h2 className="max-w-lg mb-6 text-white font-sans text-3xl font-bold leading-none tracking-tight  sm:text-4xl md:mx-auto">
-              <span className="relative inline-block">
+            <h1 className="max-w-lg mb-6 text-white font-sans md:text-7xl font-bold leading-none tracking-tight  sm:text-4xl md:mx-auto">
+             {/*  <span className="relative inline-block">
                 <svg
                   viewBox="0 0 52 24"
                   fill="currentColor"
@@ -32,31 +33,31 @@ export const Hero1 = () => {
                     height="24"
                   />
                 </svg>
-                <span className="relative">The</span>
-              </span>{' '}
-              quick, brown fox jumps over a lazy dog
-            </h2>
+                <span className="relative">Increase</span>
+              </span>{' '} */}
+              Traffic with our blog tool 
+            </h1>
             <p className="text-base text-gray-700 md:text-lg">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque rem aperiam, eaque ipsa quae.
             </p>
           </div>
-          <form className="flex flex-col items-center w-full mb-4 md:flex-row">
+          <form className="flex flex-col items-center w-full mb-4 gap-4 md:flex-row">
             <input
               placeholder="Name"
               required
               type="text"
-              className="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mr-2 md:mb-0 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+              className="flex-grow  input input-bordered input-primary w-full max-w-xs"
             />
             <input
               placeholder="Email"
               required
               type="text"
-              className="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mr-2 md:mb-0 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+              className="flex-grow input input-bordered input-primary w-full max-w-xs"
             />
             <button
               type="submit"
-              className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+              className="btn btn-primary"
             >
               Subscribe
             </button>

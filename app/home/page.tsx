@@ -6,8 +6,9 @@ import Comparision from "../components/Comparision";
 import Testimonial from "../components/Testimonial";
 import ValuePropsComponent from "../components/Valueprops";
 import Mvp from "../components/Mvp/Mvp";
-
+import Aboutme from "../components/aboutme";
 import { Hero1 } from "../components/Hero1";
+
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       {/* <ValuePropsComponent /> */}
       <Comparision />
       <Progress />
+      <Aboutme/>
     </main>
   );
 }
