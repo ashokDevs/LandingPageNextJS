@@ -1,12 +1,12 @@
 function Aboutme() {
   return (
-    <div className="hero min-h-screen bg-base-200">
+    <div className="hero min-h-screen bg-base-200 px-10">
       <div className="hero-content flex-col lg:flex-row">
-        <h1 className="text-5xl font-bold">Little About Me</h1>
+        <h1 className="text-5xl font-bold text-right">Little About Me</h1>
         <div className="divider invisible divider-horizontal md:visible"></div>
 
         <div className="order-2 lg:order-1">
-          <p className="py-6">
+          <p className="py-6 max-w-5xl">
             Thank you for scrolling this far; it&apos;s my best opportunity to
             introduce myself. I&apos;m Ashok, a 19-year-old from India. This
             blog automation tool is my second product. The first one was an AI

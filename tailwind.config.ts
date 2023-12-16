@@ -3,7 +3,7 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   daisyui: {
-    themes: ["light", "dark", "cupcake", "forest","winter"],
+    themes: ["light", "dark", "cupcake", "forest", "winter"],
   },
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -18,11 +18,15 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    backgroundSize: {
+      auto: "auto",
+      cover: "cover",
+      contain: "contain",
+      "50%": "50%",
+      "16": "4rem",
+    },
   },
-  plugins: [
-    require("daisyui"),
-    require("tailwindcss-bg-patterns")
-  ],
+  plugins: [require("daisyui"), require("tailwindcss-bg-patterns")],
 };
 
 export default config;

@@ -3,25 +3,28 @@
 
 import Progress from "../components/Progress/Progress";
 import Comparision from "../components/Comparision";
-import Testimonial from "../components/Testimonial";
-import ValuePropsComponent from "../components/Valueprops";
+import { Footer } from "../components/Footer";
 import Mvp from "../components/Mvp/Mvp";
 import Aboutme from "../components/aboutme";
 import { Hero1 } from "../components/Hero/Hero1";
-import Test from "@/app/components/icons/Test"
-import Header from "../components/Header";
+import Test from "@/app/components/icons/Test";
+import Join from "../components/Join";
+
 export default function Home() {
   return (
-    <main className="w-full overflow-hidden flex flex-col " >
-      <Header />
-      <Hero1/>
-      <Testimonial />
-      <Mvp/>
-      <Test/>
-      {/* <ValuePropsComponent /> */}
+    <main className="w-full h-full overflow-hidden flex flex-col ">
+      <div className="flex flex-col ">
+        <Hero1 />
+
+        <Mvp />
+      </div>
+      <Test />
+
       <Comparision />
       <Progress />
-      <Aboutme/>
+      <Aboutme />
+      <Join />
+      <Footer />
     </main>
   );
 }

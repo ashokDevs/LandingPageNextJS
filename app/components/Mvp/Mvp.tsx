@@ -3,7 +3,7 @@ import "@/app/components/Mvp/Mvp.css";
 import Image from "next/image";
 const Mvp = () => {
   return (
-    <div className="min-h-screen min-w-full flex flex-col items-center justify-center mx-3 my-10">
+    <div className="md:pt-96 min-h-screen min-w-full flex flex-col items-center justify-center mx-3 py-10 mb-40 text-base-100 bg-white ">
       <h1 className="text-5xl font-bold">what our tool can do?</h1>
       <p className="py-6 ">
         From generating blogs to updating them , it can do all ,here are some:

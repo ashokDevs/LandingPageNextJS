@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html data-theme="winter" lang="en">
+    <html data-theme="dark" lang="en">
       <body
         className={`${inter.className}
         min-h-screen
@@ -32,7 +32,7 @@ export default function RootLayout({
         <Home />
         {children}
         <Analytics />
-        <Footer />
+        
       </body>
     </html>
   );

@@ -5,7 +5,7 @@ export default function Header() {
     <header className="">
       <div className="drawer">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content flex flex-col">
+        <div className="drawer-content flex flex-col items-center">
           {/* Navbar */}
           <div className="w-full navbar bg-base-300">
             <div className="flex-none lg:hidden">
@@ -29,20 +29,28 @@ export default function Header() {
                 </svg>
               </label>
             </div>
-            <div className="flex-1 px-2 mx-2">upblogs </div>
-            <div className="flex-none hidden lg:block">
-              <ul className="menu menu-horizontal">
-                {/* Navbar menu content here */}
-                <li>
-                  <a>Navbar Item 1</a>
+            <div className="flex-1 px-2 mx-2 font-semibold text-2xl">
+              Blogpaw{" "}
+            </div>
+            {/* <div className="flex-none hidden lg:block ">
+              <ul className="menu menu-horizontal text-2xl ">
+                
+                <li className="flex flex-col items-center justify-center text-center">
+                  <a href="https://shipwithme.beehiiv.com/subscribe">
+                    Subscribe to my newsletter
+                  </a>
                 </li>
                 <li>
-                  <a>Navbar Item 2</a>
+                  <button
+                    type="submit"
+                    className="btn hover:bg-blue-800 color-primary-content flex flex-col items-center justify-center text-center  btn-primary"
+                  >
+                    Join now
+                  </button>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
-          
         </div>
         <div className="drawer-side">
           <label
@@ -63,4 +71,4 @@ export default function Header() {
       </div>
     </header>
   );
-};
+}
