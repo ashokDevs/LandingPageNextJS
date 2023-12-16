@@ -3,7 +3,7 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   daisyui: {
-    themes: ["light", "dark", "cupcake", "forest"],
+    themes: ["light", "dark", "cupcake", "forest","winter"],
   },
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
