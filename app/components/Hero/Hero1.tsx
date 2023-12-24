@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import "@/app/components/Hero/Hero.css";
 import Image from "next/image";
 import Link from "next/link";
-import { Link as ScrollLink } from "react-scroll";
+
 export const Hero1 = () => {
   const [scrolling, setScrolling] = useState(false);
 
@@ -148,14 +148,7 @@ export const Hero1 = () => {
             className="flex-grow input input-bordered input-primary w-full max-w-xs"
           />
         </form> */}
-        <ScrollLink
-          activeClass="active"
-          to="Join" // Provide the ID of the target section
-          spy={true}
-          smooth={true}
-          offset={-70} // Adjust the offset based on your layout
-          duration={1000}
-        >
+     
           <button className="btn color-primary-content btn-wide btn-primary text-xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -196,7 +189,7 @@ export const Hero1 = () => {
               <path d="M6 12l15 0" />
             </svg>
           </button>
-        </ScrollLink>
+        
 
         <br />
        
