@@ -1,10 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
+import { Link as ScrollLink } from "react-scroll";
 import "@/app/components/Hero/Hero.css";
 import Image from "next/image";
 import Link from "next/link";
+import Join from "../Join";
 
 export const Hero1 = () => {
   const [scrolling, setScrolling] = useState(false);
@@ -86,9 +87,9 @@ export const Hero1 = () => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="feather feather-menu"
           >
             <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -148,40 +149,41 @@ export const Hero1 = () => {
             className="flex-grow input input-bordered input-primary w-full max-w-xs"
           />
         </form> */}
-     
-          <button className="btn color-primary-content btn-wide btn-primary text-xl">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="icon icon-tabler icon-tabler-graph"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M4 18v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
-              <path d="M7 14l3 -3l2 2l3 -3l2 2" />
-            </svg>
-            Pre-Order<span className="line-through text-sm">$39</span> $29
-          </button>
-          <br />
+
+        <button className="btn color-primary-content btn-wide btn-primary text-xl">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="icon icon-tabler icon-tabler-graph"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            strokeWidth="2"
+            stroke="currentColor"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 18v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+            <path d="M7 14l3 -3l2 2l3 -3l2 2" />
+          </svg>
+          Pre-Order<span className="line-through text-sm">$39</span> $29
+        </button>
+        <br />
+        <ScrollLink to="Join" smooth={true} duration={1000}>
           <button className="btn btn-wide btn-outline btn-secondary mt-2 text-xl">
-            join waitilist
+            Join Waitlist
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-arrow-right-tail"
               width="24"
               height="24"
               viewBox="0 0 24 24"
-              stroke-width="2"
+              strokeWidth="2"
               stroke="currentColor"
               fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M18 15l3 -3l-3 -3" />
@@ -189,10 +191,9 @@ export const Hero1 = () => {
               <path d="M6 12l15 0" />
             </svg>
           </button>
-        
+        </ScrollLink>
 
         <br />
-       
       </div>
       <br />
       <br />

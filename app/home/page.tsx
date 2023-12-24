@@ -9,7 +9,7 @@ import Aboutme from "../components/aboutme";
 import { Hero1 } from "../components/Hero/Hero1";
 import Test from "@/app/components/icons/Test";
 import Join from "../components/Join";
-import Header from "../components/Header";
+
 import FAQ from "../components/FAQ";
 import Pricing from "../components/Pricing";
 
@@ -29,7 +29,7 @@ export default function Home() {
       <Progress />
       <FAQ/>
       
-      <Join />
+      <Join  />
       <Footer />
     </main>
   );
