@@ -1,6 +1,6 @@
 function Progress() {
   return (
-    <div className="min-h-screen  flex flex-col lg:flex-row items-center justify-center text-base-100 bg-white">
+    <div className="min-h-screen  flex flex-col lg:flex-row items-center justify-center text-base-content py-10 bg-base-100">
       <h1 className="text-5xl font-bold p-9">Future Timeline of My Product</h1>
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical p-6">
         <li>

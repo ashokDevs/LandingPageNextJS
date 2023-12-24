@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <footer className="footer p-10 bg-base-200 text-base-content">
       <nav>
-        <header className="footer-title">Ser</header>
+        <header className="footer-title">Services</header>
         <a className="link link-hover">Branding</a>
         <a className="link link-hover">Design</a>
         <a className="link link-hover">Marketing</a>

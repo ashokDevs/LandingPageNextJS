@@ -9,10 +9,14 @@ import Aboutme from "../components/aboutme";
 import { Hero1 } from "../components/Hero/Hero1";
 import Test from "@/app/components/icons/Test";
 import Join from "../components/Join";
+import Header from "../components/Header";
+import FAQ from "../components/FAQ";
+import Pricing from "../components/Pricing";
 
 export default function Home() {
   return (
-    <main className="w-full h-full overflow-hidden flex flex-col ">
+    <main className="w-full h-full overflow-hidden flex flex-col items-center justify-center">
+   {/*  <Header/> */}
       <div className="flex flex-col ">
         <Hero1 />
 
@@ -21,8 +25,10 @@ export default function Home() {
       <Test />
 
       <Comparision />
+      <Pricing/>
       <Progress />
-      <Aboutme />
+      <FAQ/>
+      
       <Join />
       <Footer />
     </main>

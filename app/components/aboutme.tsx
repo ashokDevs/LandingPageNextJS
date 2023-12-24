@@ -1,6 +1,6 @@
 function Aboutme() {
   return (
-    <div className="hero min-h-screen bg-base-200 px-10">
+    <div className="hero min-h-screen bg-base-200 px-10 py-10">
       <div className="hero-content flex-col lg:flex-row">
         <h1 className="text-5xl font-bold text-right">Little About Me</h1>
         <div className="divider invisible divider-horizontal md:visible"></div>

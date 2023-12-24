@@ -7,7 +7,7 @@ function Comparision() {
   const competitorTickIconSrc = "/x.png"; // Replace with the actual URL
 
   return (
-    <div className="bg-base-200 min-h-screen w-full flex flex-col items-center justify-center">
+    <div className="bg-base-200 min-h-screen w-full flex flex-col items-center justify-center py-10 ">
       <h1 className="text-6xl font-bold text-center mb-8">
         Which one would you pick?
       </h1>
@@ -20,12 +20,12 @@ function Comparision() {
                 <Image
                   src={tickIconSrc}
                   alt="Checkmark"
-                   height={10}
-                   width={10}
+                   height={20}
+                   width={20}
                   className="mr-2"
                 />
                 <p>Generate Blogs that convert</p>
-              </li>{" "}
+              </li>
               <br />
               <li className="flex items-center">
                 <Image

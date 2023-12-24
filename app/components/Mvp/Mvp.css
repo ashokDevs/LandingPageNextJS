@@ -3,15 +3,15 @@
   aspect-ratio: 4/3;
   border-style: solid;
   border-width: 2px;
-  border-color: oklch(var(--b1));
+  border-color: oklch(var(--bc));
   border-radius: 1.5rem; /* 3 times the default border-radius value */
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   margin: auto;
-  background-color: whitesmoke;
-  color: oklch(var(--b1));
+  background-color: oklch(var(--b1));
+  color: oklch(var(--bc));
   
 }
 
