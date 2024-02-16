@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html data-theme="dracula" lang="en">
+    <html data-theme="lofi" lang="en">
       <body
         className={`${inter.className}
         min-h-screen
@@ -32,7 +32,6 @@ export default function RootLayout({
         <Home />
         {children}
         <Analytics />
-        
       </body>
     </html>
   );

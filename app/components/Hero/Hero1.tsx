@@ -2,10 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
-import "@/app/components/Hero/Hero.css";
 import Image from "next/image";
 import Link from "next/link";
 import Join from "../Join";
+import Navbar from "../Navbar";
 
 export const Hero1 = () => {
   const [scrolling, setScrolling] = useState(false);
@@ -32,100 +32,11 @@ export const Hero1 = () => {
     };
   }, [scrolling]);
 
-  const navClasses = `fixed inset-x-0 top-0 flex flex-row justify-between z-20 text-white transition duration-500 ${
-    scrolling ? "bg-base-100 shadow-sm shadow-base-300" : "bg-transparent"
-  }`;
+  
   return (
-    <div className="bg-base-100 herobg bg-cover flex text-center flex-col items-center justify-between pt-32 px-4  h-screen w-screen lg:pt-20 md:px-0">
-      <nav id="nav" className={navClasses}>
-        <div className="p-4">
-          <div className="font-extrabold tracking-widest text-xl">
-            <a
-              href="#"
-              className="transition duration-500 hover:text-indigo-500"
-            >
-              Your Logo
-            </a>
-          </div>
-        </div>
-
-        {/* <!-- Nav Items Working on Tablet & Bigger Sceen --> */}
-        <div className="p-4 hidden md:flex flex-row justify-between font-bold">
-          <a
-            id="hide-after-click"
-            href="#home"
-            className="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500"
-          >
-            Home
-          </a>
-          <a
-            href="#about"
-            className="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500"
-          >
-            About
-          </a>
-          <a
-            href="#contactus"
-            className="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500"
-          >
-            Contact Us
-          </a>
-          <a
-            href="#products"
-            className="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500"
-          >
-            Products
-          </a>
-        </div>
-
-        {/*  <!-- Burger Nav Button on Mobile --> */}
-        <div id="nav-open" className="p-4 md:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="feather feather-menu"
-          >
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </div>
-      </nav>
-
-      {/*  <!-- Opened Nav in Mobile, you can use javascript/jQuery --> */}
-      <div
-        id="nav-opened"
-        className="fixed left-0 right-0 hidden bg-white mx-2 mt-16 rounded-br rounded-bl shadow z-10"
-      >
-        <div className="p-2 divide-y divide-gray-600 flex flex-col">
-          <a href="#home" className="p-2 font-semibold hover:text-indigo-700">
-            Home
-          </a>
-          <a href="#about" className="p-2 font-semibold hover:text-indigo-700">
-            About
-          </a>
-          <a
-            href="#contactus"
-            className="p-2 font-semibold hover:text-indigo-700"
-          >
-            Contact Us
-          </a>
-          <a
-            href="#products"
-            className="p-2 font-semibold hover:text-indigo-700"
-          >
-            Products
-          </a>
-        </div>
-      </div>
-      <div className="flex flex-col items-center max-w-2xl md:px-8">
+    <div className="bg-base-100   flex text-center flex-col items-center justify-between  px-4  h-screen max-w-screen md:px-0">
+      <Navbar/>
+      <div className="mt-20 flex flex-col items-center max-w-2xl md:px-8">
         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
           <h1 className="max-w-lg text-5xl mb-6 text-base-content font-sans md:text-7xl font-bold leading-none tracking-tight  sm:text-4xl md:mx-auto">
             Traffic with our blog tool
@@ -195,8 +106,7 @@ export const Hero1 = () => {
 
         <br />
       </div>
-      <br />
-      <br />
+      
       <Image
         layout="responsive"
         width={1000}

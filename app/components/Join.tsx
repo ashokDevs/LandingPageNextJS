@@ -1,7 +1,7 @@
 "use client";
 import { Element } from "react-scroll";
 import { MouseEvent, useState } from "react";
-import { insertEmail } from "../Library/joinWaitList";
+import { insertEmail } from "../Library/actions/joinWaitList";
 function Join() {
   const [email, setEmail] = useState<string>("");
 
