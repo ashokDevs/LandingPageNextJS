@@ -27,11 +27,7 @@ function Aboutme() {
           </div>
         </div>
 
-        <img
-          src="/aboutme.jpg"
-          className="w-36 sm:aspect-1/1 rounded-full md:w-60 md:aspect-2/3 md:rounded-lg shadow-2xl order-1 lg:order-2"
-          alt="About Me"
-        />
+       
       </div>
     </div>
   );

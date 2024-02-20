@@ -10,18 +10,17 @@ import Join from "../components/Join";
 
 import FAQ from "../components/FAQ";
 import Pricing from "../components/Pricing";
-import HowItWorks from "../components/HowItWorks";
 
 export default function Home() {
   return (
-    <main className="w-full h-full overflow-hidden flex flex-col items-center justify-center">
+    <main className="w-full h-full overflow-hidden flex flex-col gap-10 items-center justify-center">
    {/*  <Header/> */}
       <div className="flex flex-col ">
         <Hero1 />
 
         <Mvp />
       </div>
-       <HowItWorks/>
+       
       <Pricing/>
       <FAQ/>
       

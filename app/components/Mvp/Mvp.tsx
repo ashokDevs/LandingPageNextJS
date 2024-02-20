@@ -3,59 +3,157 @@ import "@/app/components/Mvp/Mvp.css";
 import Image from "next/image";
 const Mvp = () => {
   return (
-    <div className="md:pt-96 min-h-screen min-w-full flex flex-col items-center justify-center mx-3 py-10 mb-40 text-base-content  ">
-      <h1 className="text-5xl font-bold">what our tool can do?</h1>
-      <p className="py-6 ">
-        From generating blogs to updating them , it can do all ,here are some:
+    <div className=" min-h-screen min-w-full flex flex-col items-center justify-center mx-3 py-10  text-base-content  ">
+      
+      <div className="flex flex-col items-center px-10">
+        <h1 className="text-4xl w-[90%] md:text-5xl text-left md:text-center font-bold">
+        Easy way to grow organically
+      </h1>
+      <p className="py-6  text-left md:text-center w-[300px] ">
+        Everything you need to start marketing for your product.
       </p>
+        </div>
       <div className="grid grid-flow-row grid-cols-1 place-content-center md:grid-cols-2 lg:grid-cols-3 gap-4 sm ">
         <div className={` item `}>
-          <Image width={10} height={10} className=" pb-1" src="/ballpen.png" alt="" />
-          <h2 className="text-2xl font-bold pb-1">Cut your Time</h2>
-          <p className="invisible ">
-            on an average solofounders spend 2 days to write a blog. with the
-            help our tool you can write a blog in 30 mins
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="icon icon-tabler icon-tabler-clock"
+            width="60"
+            height="80"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+            <path d="M12 7v5l3 3" />
+          </svg>
+          <h2 className="text-2xl font-bold pb-1">Saves your Time</h2>
+          <p className="">
+            Save plenty of time and build your million dollar startup. while we do the blogging.
           </p>
         </div>
         <div className={` item`}>
-          <Image width={10} height={10} className=" pb-1" src="/ballpen.png" alt="" />
-          <h2 className="text-2xl font-bold pb-1">Cut your Time</h2>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="icon icon-tabler icon-tabler-link"
+            width="60"
+            height="80"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M9 15l6 -6" />
+            <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
+            <path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" />
+          </svg>
+
+          <h2 className="text-2xl font-bold pb-1">Easy integration</h2>
           <p>
-            on an average solofounders spend 2 days to write a blog. with the
-            help our tool you can write a blog in 30 mins
+            Easily integrate with your favourite CMS like Wordpress,framer etc
           </p>
         </div>
         <div className={` item`}>
-          <Image width={10} height={10} className=" pb-1" src="/ballpen.png" alt="" />
-          <h2 className="text-2xl font-bold pb-1">Cut your Time</h2>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="icon icon-tabler icon-tabler-chart-infographic"
+            width="60"
+            height="80"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M7 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+            <path d="M7 3v4h4" />
+            <path d="M9 17l0 4" />
+            <path d="M17 14l0 7" />
+            <path d="M13 13l0 8" />
+            <path d="M21 12l0 9" />
+          </svg>
+          <h2 className="text-2xl font-bold pb-1">Best Keywords</h2>
+          <p>Our tool in the backend does all the keyword reasearch for you.</p>
+        </div>
+        <div className={` item`}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="icon icon-tabler icon-tabler-robot"
+            width="60"
+            height="80"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M7 7h10a2 2 0 0 1 2 2v1l1 1v3l-1 1v3a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-3l-1 -1v-3l1 -1v-1a2 2 0 0 1 2 -2z" />
+            <path d="M10 16h4" />
+            <circle cx="8.5" cy="11.5" r=".5" fill="currentColor" />
+            <circle cx="15.5" cy="11.5" r=".5" fill="currentColor" />
+            <path d="M9 7l-1 -4" />
+            <path d="M15 7l1 -4" />
+          </svg>
+          <h2 className="text-2xl font-bold pb-1">AI Generated Blogs</h2>
           <p>
-            on an average solofounders spend 2 days to write a blog. with the
-            help our tool you can write a blog in 30 mins
+            Blogs are generated by AI in a minute.These blogs are optimized with
+            the SEO.
           </p>
         </div>
         <div className={` item`}>
-          <Image width={10} height={10} className=" pb-1" src="/ballpen.png" alt="" />
-          <h2 className="text-2xl font-bold pb-1">Cut your Time</h2>
-          <p>
-            on an average solofounders spend 2 days to write a blog. with the
-            help our tool you can write a blog in 30 mins
-          </p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="icon icon-tabler icon-tabler-award"
+            width="60"
+            height="80"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M12 9m-6 0a6 6 0 1 0 12 0a6 6 0 1 0 -12 0" />
+            <path d="M12 15l3.4 5.89l1.598 -3.233l3.598 .232l-3.4 -5.889" />
+            <path d="M6.802 12l-3.4 5.89l3.598 -.233l1.598 3.232l3.4 -5.889" />
+          </svg>
+          <h2 className="text-2xl font-bold pb-1">Better than other tools</h2>
+          <p>We are constantly working on to make this tool better for you.</p>
         </div>
         <div className={` item`}>
-          <Image width={10} height={10} className=" pb-1" src="/ballpen.png" alt="" />
-          <h2 className="text-2xl font-bold pb-1">Cut your Time</h2>
-          <p>
-            on an average solofounders spend 2 days to write a blog. with the
-            help our tool you can write a blog in 30 mins
-          </p>
-        </div>
-        <div className={` item`}>
-          <Image width={10} height={10} className=" pb-1" src="/ballpen.png" alt="" />
-          <h2 className="text-2xl font-bold pb-1">Cut your Time</h2>
-          <p>
-            on an average solofounders spend 2 days to write a blog. with the
-            help our tool you can write a blog in 30 mins
-          </p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="icon icon-tabler icon-tabler-circuit-ammeter"
+            width="60"
+            height="80"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M12 12m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+            <path d="M5 12h-3" />
+            <path d="M19 12h3" />
+            <path d="M10 14v-3c0 -1.036 .895 -2 2 -2s2 .964 2 2v3" />
+            <path d="M14 12h-4" />
+          </svg>
+          <h2 className="text-2xl font-bold pb-1">Automation</h2>
+          <p>All the blogs are generated and published automatically.</p>
         </div>
       </div>
     </div>

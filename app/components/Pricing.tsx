@@ -3,11 +3,10 @@ import TickSvg from "./icons/TickSvg";
 
 const Pricing = () => {
   return (
-    <div className="text-center flex flex-col gap-10 py-16 bg-base-100 h-screen w-screen ">
+    <div className="text-center flex flex-col gap-10  bg-base-100 h-screen w-screen ">
       <div>
-        <p className="text-sm text-base-content">Our Pricing</p>
         <h1 className="text-4xl font-bold text-base-content mb-4">
-          Choose Your Plan
+          Pricing
         </h1>
       </div>
 
@@ -24,17 +23,17 @@ const Pricing = () => {
             <ul className="list-none p-0 m-0">
               <li className="flex items-center gap-3">
                 <TickSvg />
-                <p>Generate Blogs that convert</p>
+                <p>25 articles</p>
               </li>
               <br />
               <li className="flex items-center gap-3">
                 <TickSvg />
-                <p>update Blogs</p>
+                <p>Wordpress Integration</p>
               </li>
               <br />
               <li className="flex items-center gap-3">
                 <TickSvg />
-                <p>Plagiarism free</p>
+                <p>Publish blogs automatically</p>
               </li>
               <br />
               <li className="flex items-center gap-3">

@@ -22,8 +22,8 @@ function FAQ() {
 
   // Render the FAQ component
   return (
-    <div className="min-h-screen  px-10 py-10 flex flex-col md:flex-row gap-10 h-screen  ">
-      <h1 className="text-5xl font-extraboldl">FREQUENTLY ASKED QUESTIONS</h1>
+    <div className="min-h-screen  px-10 py-10 flex flex-col md:flex-row md:gap-80 h-screen  ">
+      <h1 className="text-5xl font-extraboldl">F.A.Q</h1>
       <div className="join join-vertical w-full ">
         {/* Map over the FAQ items to create accordion components */}
         {faqItems.map((item, index) => (
